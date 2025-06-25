@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Enter a random first number</h1>
+        <input type="number" id="num1"> 
+        <h1>Enter a random second number</h1>
+        <input type="number" id="num2">
+    </div>
+    <div>
+        <p id="result"></p>
+        <button id="add" onclick="sum()">Add</button>
+    </div>
+</body>
+<script>
+    function sum() {
+    let num1=parseInt(document.getElementById("num1").value);
+    let num2=parseInt(document.getElementById("num2").value);
+    let add=document.getElementById('add');
+    let result=document.getElementById('result');
+        adding=num1+num2;
+        result.innerHTML=adding;
+        result.style.color ="Blue"
+    }
+</script>
+<br>
+     <div>
+        <input id="firstname" type="text" placeholder="Enter your first name">
+     </div>
+          <div>
+        <input id="lastname" placeholder="Enter your last name">
+     </div>
+         <div>
+        <p id="result"></p>
+        <button id="greet" onclick="hello()">say hi</button>
+    </div>
+<script>
+    function hello() {
+    let firstname=document.getElementById("firstname").value;
+    let lastname=document.getElementById("lastname").value;
+    let result=document.getElementById('result');
+    result.innerHTML="hello "+firstname+ " "+lastname;
+        result.style.color ="Blue"
+    }
+</script>
+</body>
+</html>
